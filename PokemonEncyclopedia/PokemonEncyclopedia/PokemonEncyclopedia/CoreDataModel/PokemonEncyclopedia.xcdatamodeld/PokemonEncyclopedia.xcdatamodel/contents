@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Pokemon" representedClassName=".Pokemon" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="url" attributeType="URI"/>
+        <relationship name="detail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonDetail"/>
+    </entity>
+    <entity name="PokemonDetail" representedClassName=".PokemonDetail" syncable="YES">
+        <attribute name="abilities" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="baseExperience" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="NO"/>
+        <attribute name="height" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="NO"/>
+        <attribute name="imageURL" optional="YES" attributeType="URI"/>
+        <attribute name="weight" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="Pokemon" positionX="-54" positionY="36" width="128" height="89"/>
+        <element name="PokemonDetail" positionX="-63" positionY="-18" width="128" height="104"/>
+    </elements>
+</model>
